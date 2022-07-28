@@ -1,0 +1,20 @@
+We will be learning/implementing Advanced Design Patterns in React.
+
+What are Design Patterns?
+Design patterns are "effective" solutions to common application development challenges.
+Effective is emphasized because there are a lot of solutions to different problems that are not effective,
+and lead to more brittle code down the line making apps less performant and less maintainable. These are generally
+referred to as "anti-patterns". "Design patterns" are positive equivalent of "anti-patterns"
+
+Caveat: 
+    1. The design patterns we talk about in this course are not the Gang of Four OOP design patterns such as creational, behavioral patterns etc.
+    2. The design patterns we cover here are effective solutions to some extremely common challenges in React.
+       Some of these challenges includes things like:
+        a. Creating reusable layouts to put our components into.
+        b. How to make things like split screen and modals.
+        c. Reusing Complex logic between multiple components. 
+            (If we have 2 or more components to do the same complex things such as load data from server, 
+            how do we best represent that in our react apps so that we can share that code between those components 
+            instead of having to copy and paste it.)
+        d. Working with Forms
+        e. How to incorporate concepts from functional programming into our react apps.
