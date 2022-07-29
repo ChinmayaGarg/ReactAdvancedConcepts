@@ -11,6 +11,9 @@ Convention: React has convention to give components capital letter names.
 Styled Components:
 They are just the easy way to add styles to React Components.
 
-SPLIT SCREEN
-We might want left component takes less space and right component takes more space or vice versa.
+SPLIT SCREEN COMPONENT IMPROVEMENTS
+1. We might want left component takes less space and right component takes more space or vice versa.
 We can do this by changing flex values, and to make it dynamic we added weight variable to the components, this will help the components to take space accordingly.
+
+2. Instead of passing left and right components as props in SplitScreen component. It is possible with layout components to make them accept their children as children in the sense of react.
+This also helps in accepting props in a child component.
