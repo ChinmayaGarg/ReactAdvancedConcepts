@@ -1,0 +1,12 @@
+First Layout Component we will create is SplitScreen.
+
+https://codeburst.io/renaming-destructured-variables-in-es6-807549754972
+Renaming destructured variables in ES6
+Example: 
+    var user = {name: 'Italo', age: 10};
+    var { name: Username, age: Userage }= user;
+
+Convention: React has convention to give components capital letter names.
+
+Styled Components:
+They are just the easy way to add styles to React Components.
