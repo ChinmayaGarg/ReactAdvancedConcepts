@@ -1,0 +1,34 @@
+What are Layout Components?
+React Components that deal primarily with arranging other components on the page.
+Their primary concern is to help us arrange other components that we create on the page.
+    Examples:
+    1. Split Screens: Arranging more than one component in different sections of the page.
+    2. List & Items: Displaying data in a List etc.
+    3. Modals: The content that gets displayed over top of the actual page.
+
+Basic Idea about Layout Components:
+Normally, when we create a component like side navigation for our site (i.e. just abar on LHS that contains some links).
+
+We generally create side navigation using the div and the styles that go with the side nav inside the component itself.
+<div styles={...}>
+    <h1>Component Code...</h1>
+</div>
+
+However, with Layout Components we split the actual layout styles into their own components, and then simply display the component itself,
+in this case the side nav, inside that layout component. 
+What it does is, it separates the component itself from where the component is being displayed on the page, and 
+it gives a lot more flexibility for how to use it in the future.
+
+LAYOUT COMPONENT
+<div styles={...}>
+    {children}
+</div>
+
+SIDE NAV
+<>
+<h1>Component Code...
+</>
+
+IDEA OF LAYOUT Components
+The main idea of Layout Components is that, our components that we create, the main content components of our pages,
+should not know where they are being displayed on the page.
