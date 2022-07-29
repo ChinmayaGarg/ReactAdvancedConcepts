@@ -10,3 +10,7 @@ Convention: React has convention to give components capital letter names.
 
 Styled Components:
 They are just the easy way to add styles to React Components.
+
+SPLIT SCREEN
+We might want left component takes less space and right component takes more space or vice versa.
+We can do this by changing flex values, and to make it dynamic we added weight variable to the components, this will help the components to take space accordingly.
