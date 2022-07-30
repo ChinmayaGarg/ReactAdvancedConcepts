@@ -4,6 +4,7 @@ import { SmallPersonListItem } from './people/SmallPersonListItem';
 import { LargePersonListItem } from './people/LargePersonListItem';
 import { LargeProductListItem } from './products/LargePorductListItem';
 import { SmallProductListItem } from './products/SmallPorductListItem';
+import { Modal } from './Modal';
 
 const people = [
   {
@@ -50,6 +51,9 @@ const products = [
 function App() {
   return (
     <>
+      <Modal>
+        <LargeProductListItem product={products[0]}></LargeProductListItem>
+      </Modal>
       <RegularList items={people} resourceName="person" itemComponent={SmallPersonListItem} />
       <NumberedList items={people} resourceName="person" itemComponent={LargePersonListItem} />
       <RegularList items={products} resourceName="product" itemComponent={SmallProductListItem} />
