@@ -1,6 +1,6 @@
-import { RegularList } from '../../RegularList';
-import { SmallPersonListItem } from '../../people/SmallPersonListItem';
-import { LargePersonListItem } from '../../people/LargePersonListItem';
+import { RegularList } from './RegularList';
+import { SmallPersonListItem } from './people/SmallPersonListItem';
+import { LargePersonListItem } from './people/LargePersonListItem';
 const people = [
   {
     name: 'John Doe',
