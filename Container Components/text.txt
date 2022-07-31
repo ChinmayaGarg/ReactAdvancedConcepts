@@ -1,0 +1,25 @@
+CONTAINER COMPONENT
+Components that take care of loading and managing data for their child Components.
+Example:
+    Let's say we have a following setup. A container component with several child component in it.
+    <ContainerComponent>
+        <Child1 />
+        <Child2 />
+        <Child3 />
+    </ContainerComponent>
+
+Generally what developers do is they have each of the child components load their own data and display it as below.
+const Child1 = () =>{
+    // load data
+    return (
+        // display the data
+    )
+}
+
+Problem with above general logic is, lot of the time we need our child components to be able to share that logic.
+Container Components solve this problem is by splitting that logic (load data logic) out into its own component which is the container.
+The container then takes care of loading that data and passess it automatically to the children components.
+
+IDEA OF CONTAINER COMPONENT
+We don't want our child components of container component to know where their data is coming from or how to manage it.
+We want our child components to be duumb and take some props and display whatever they need to display.
