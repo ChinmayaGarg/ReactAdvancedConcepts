@@ -1,0 +1,4 @@
+The CurrentUserLoader that we created passed the current user inside its props.
+The main drawback with this appraoch is that it is very restricted in what it is capable of doing.
+As what this CurrentUserLoader does is load a single user and passes it to its children, 
+and the single user is the current user that we are loading from the server. 
