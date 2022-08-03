@@ -1,0 +1,3 @@
+Instead of having a container component that loads a specific type of resource (Eg: UserLoader loads only user resource),
+we are going to modify UserLoader into ResourceLoader, 
+which will be a more generic component that allows us to load any type of resource from the server.
