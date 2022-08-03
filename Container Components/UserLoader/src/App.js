@@ -2,18 +2,16 @@ import { CurrentUserLoader } from './CurrentUserLoader';
 import { UserLoader } from './UserLoader';
 import { UserInfo } from './UserInfo';
 
+const UserIds = ['123', '234', '345'];
+
 function App() {
   return (
     <>
-      <UserLoader userId="123">
-        <UserInfo />
-      </UserLoader>
-      <UserLoader userId="234">
-        <UserInfo />
-      </UserLoader>
-      <UserLoader userId="345">
-        <UserInfo />
-      </UserLoader>
+      {UserIds.map((id) => (
+        <UserLoader userId={id}>
+          <UserInfo />
+        </UserLoader>
+      ))}
     </>
   );
 }
