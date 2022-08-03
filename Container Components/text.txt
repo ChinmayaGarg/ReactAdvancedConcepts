@@ -23,3 +23,7 @@ The container then takes care of loading that data and passess it automatically 
 IDEA OF CONTAINER COMPONENT
 We don't want our child components of container component to know where their data is coming from or how to manage it.
 We want our child components to be duumb and take some props and display whatever they need to display.
+
+To run the file, run following commands in different terminals:
+1. node server.js (Starts the server)
+2. npm run start (Loads the script)
