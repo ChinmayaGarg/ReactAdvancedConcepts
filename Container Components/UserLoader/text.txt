@@ -6,3 +6,7 @@ and the single user is the current user that we are loading from the server.
 Solution is to modify the CurrentUserLoader component so that instead of just loading the current user, 
 it is able to load any user we want by their ID. Instead of modifying CurrentUserLoader, we will create a new file
 UserLoader.js and will edit in it.
+
+Benefit of loading user by ID: 
+We can reuse UserLoader several times, all with different IDs and hence different users.
+We can pass different data to same component.
